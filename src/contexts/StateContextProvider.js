@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react';
 
 const StateContext = createContext();
-const baseUrl = 'https://google-search3.p.rapidapi.com/api/v1';
+const baseUrl = 'https://google-web-search1.p.rapidapi.com/?query=World%20Cup&limit=20&related_keywords=true';
 
 export const StateContextProvider = ({ children }) => {
   const [results, setResults] = useState([]);
@@ -16,7 +16,7 @@ export const StateContextProvider = ({ children }) => {
       headers: {
         'x-user-agent': 'desktop',
         'x-proxy-location': 'EU',
-       'x-rapidapi-host': 'google-search3.p.rapidapi.com',
+       'x-rapidapi-host': 'google-web-search1.p.rapidapi.com',
         'x-rapidapi-key': 'a9cf9f2fe8msh3307156b45c2727p1a6ec5jsn92a170a4e963'
       },
     });
